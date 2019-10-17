@@ -1,0 +1,60 @@
+body {
+    background-color: $color-background;
+    font-family:      $font-family-quicksand;
+}
+
+.container-card {
+   @include card-list-background;
+
+   .conteudo-card {
+     @include margin-conteudo-card;
+     width: 100%;
+   }
+
+   h1 {
+    font-weight: $font-weight-bold;
+    border-bottom: 1px solid $color-cinza;
+    width: 100%;
+   }
+
+   @media (min-width: 660px) {
+       width: 80%;
+       margin: 0 auto;
+   }
+}
+
+.container-card-descricao {
+    // background-image: url(../assets/background.jpg);
+    @include card-list;
+    p {
+        color: $color-cinza;
+        margin: $margin-simple;
+    }
+}
+
+.card-list {
+    h2 {
+        color: $color-primary-white;
+        font-weight: $font-weight-normal;
+        @include box-shadow-luz;
+        }
+    @media (min-width: $tamanho-tablet) {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    padding: 0;
+}
+
+input {
+    background: none;
+    border: none;
+    text-align: center;
+    margin: 0;
+}

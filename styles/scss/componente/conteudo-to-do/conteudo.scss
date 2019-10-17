@@ -1,0 +1,28 @@
+.conteudo-to-do {
+    @include display-flex;
+    // justify-content: space-between;
+    
+    // img {
+    //     @include width-icon-sucess;
+    // }
+
+    li {
+        @include align-items;
+
+        input {
+            @include color-p-text;  
+        }
+      
+    }
+}
+
+.botao-add {
+    @include botao-add;
+
+    #button {
+        color: white;
+        cursor: pointer;
+        @include botton-style;
+    }
+}
+
